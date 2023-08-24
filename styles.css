@@ -1,2 +1,30 @@
-
 /* Your CSS Code here. */
+
+.holder {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  margin-inline: 2px;
+  background-color: green;
+  font-size: xxx-large;
+}
+
+div > div:first-child {
+  background-color: red;
+  order: 1;
+}
+
+div > div:nth-child(2) {
+  background-color: blue;
+  order: 2;
+}
+
+div > div:nth-child(3) {
+  order: -1;
+}
