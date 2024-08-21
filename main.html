@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Assignment</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      /* Your CSS Code here. */
-
       .holder {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
         flex-wrap: wrap;
       }
 
@@ -19,27 +18,28 @@
         margin-inline: 2px;
         background-color: green;
         font-size: xxx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
       }
 
-      div > div:first-child {
+      .holder > div:first-child {
         background-color: red;
         order: 1;
       }
 
-      div > div:nth-child(2) {
+      .holder > div:nth-child(2) {
         background-color: blue;
         order: 2;
       }
 
-      div > div:nth-child(3) {
+      .holder > div:nth-child(3) {
         order: -1;
       }
     </style>
   </head>
-
   <body>
-    <!-- the entire body must be written by student -->
-
     <div class="holder">
       <div class="item">1</div>
       <div class="item">2</div>
@@ -49,7 +49,6 @@
       <div class="item">6</div>
       <div class="item">7</div>
     </div>
-
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
